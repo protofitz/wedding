@@ -5,15 +5,7 @@ app.directive('bridalParty', function(){
 		restrict:'A',
 		templateUrl:'views/bridalParty.html',
 		controller:function($scope){
-			$scope.party = [
-				{
-					name:'Justin',
-					job:'Best Man',
-					img:'',
-					desc:'',
-					selected:false,
-					side:'left'
-				},
+			$scope.girls=[
 				{
 					name:'Liz',
 					job:'Maid of Honor',
@@ -21,14 +13,6 @@ app.directive('bridalParty', function(){
 					desc:'',
 					selected:false,
 					side:'right'
-				},
-				{
-					name:'Michael',
-					job:'Groomsman',
-					img:'',
-					desc:'',
-					selected:false,
-					side:'left'
 				},
 				{
 					name:'Julie',
@@ -39,14 +23,6 @@ app.directive('bridalParty', function(){
 					side:'right'
 				},
 				{
-					name:'Tyler',
-					job:'Groomsman',
-					img:'',
-					desc:'',
-					selected:false,
-					side:'left'
-				},
-				{
 					name:'Carolyn',
 					job:'Bridesmaid',
 					img:'',
@@ -54,14 +30,7 @@ app.directive('bridalParty', function(){
 					selected:false,
 					side:'right'
 				},
-				{
-					name:'Stuart',
-					job:'Groomsman',
-					img:'',
-					desc:'',
-					selected:false,
-					side:'left'
-				},
+				
 				{
 					name:'Erin',
 					job:'Bridesmaid',
@@ -69,14 +38,6 @@ app.directive('bridalParty', function(){
 					desc:'',
 					selected:false,
 					side:'right'
-				},
-				{
-					name:'Dylan',
-					job:'Groomsman',
-					img:'',
-					desc:'',
-					selected:false,
-					side:'left'
 				},
 				{
 					name:'Olivia',
@@ -94,6 +55,51 @@ app.directive('bridalParty', function(){
 					selected:false,
 					side:'right'
 				},
+			];
+			$scope.boys = [
+				{
+					name:'Justin',
+					job:'Best Man',
+					img:'',
+					desc:'',
+					selected:false,
+					side:'left'
+				},
+				{
+					name:'Michael',
+					job:'Groomsman',
+					img:'',
+					desc:'',
+					selected:false,
+					side:'left'
+				},
+				
+				{
+					name:'Tyler',
+					job:'Groomsman',
+					img:'',
+					desc:'',
+					selected:false,
+					side:'left'
+				},
+
+				{
+					name:'Stuart',
+					job:'Groomsman',
+					img:'',
+					desc:'',
+					selected:false,
+					side:'left'
+				},
+
+				{
+					name:'Dylan',
+					job:'Groomsman',
+					img:'',
+					desc:'',
+					selected:false,
+					side:'left'
+				},
 				{
 					name:'John-Franklin',
 					job:'Ring Bearer',
@@ -102,6 +108,8 @@ app.directive('bridalParty', function(){
 					selected:false,
 					side:'left'
 				}
+				
+				
 			];
 			$scope.selectedMember = {};
 			$scope.selectMember = function(member){

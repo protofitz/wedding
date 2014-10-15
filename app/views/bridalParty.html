@@ -1,14 +1,20 @@
-<div id="bridalParty">
-	<h2>Bridal Party</h2>
-	<div id="thumbnail" ng-repeat="member in party" ng-click="selectMember(member)">
-		<span>{{member.name}}</span>
+<div id="bridalPartyHeader" class="row">
+	<h2 class="col-md-6">Bridal Party</h2>
+</div>
+<div id="bridalPartyContent" class="row sectionHeader">
+	<div class="col-md-2">
+		<div id="thumbnail" class="partyThumbs" ng-repeat="boy in boys" ng-click="selectMember(boy)">
+			<span>{{boy.name}}</span>
+		</div>
 	</div>
-	<div id="bridalPartyContent">
+	<div id="bridalPartyDetails" class="col-md-8">
 		<div id="selectedName">SELECTED:{{selectedMember.name}}</div>
 		<img ng-src="{{selectedMember.image}}">
 		<div></div>
 	</div>
-
-
-
+	<div class="col-md-2">
+		<div id="thumbnail" class=" partyThumbs" ng-repeat="girl in girls" ng-click="selectMember(girl)">
+			<span>{{girl.name}}</span>
+		</div>
+	</div>	
 </div>

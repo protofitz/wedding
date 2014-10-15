@@ -1,0 +1,14 @@
+<div id="bridalParty">
+	<h2>Bridal Party</h2>
+	<div id="thumbnail" ng-repeat="member in party" ng-click="selectMember(member)">
+		<span>{{member.name}}</span>
+	</div>
+	<div id="bridalPartyContent">
+		<div id="selectedName">SELECTED:{{selectedMember.name}}</div>
+		<img ng-src="{{selectedMember.image}}">
+		<div></div>
+	</div>
+
+
+
+</div>
